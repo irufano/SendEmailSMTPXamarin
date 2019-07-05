@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="EmailSMTP.MainPage">
+
+    <StackLayout>
+        
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
+            <Image Margin="0,50,0,0" x:Name="imgBanner" Source="banner.png" ></Image>
+            <Image Margin="0,0,0,10" x:Name="imgEmail" HeightRequest="150" Source="maillogo.png" ></Image>
+            <Label Margin="0,0,0,10" Text="Email with SMTP" FontAttributes="Bold" FontSize="Large" TextColor="#CA6F1E" HorizontalTextAlignment="Center" ></Label>
+            <Entry x:Name="txtTo" Placeholder="someone@example.com"></Entry>
+            <Entry x:Name="txtSubject" Placeholder="Subject"></Entry>
+            <Editor x:Name="txtBody" HeightRequest="50" ></Editor>
+            <Button x:Name="btnSend" Text="Send" Clicked="BtnSend_Clicked" />
+        </StackLayout>
+        
+        <StackLayout VerticalOptions="EndAndExpand" Margin="30,30,30,30">
+            <Button x:Name="btnListviewPage" Text="Page Listview" Clicked="BtnListviewPage_Clicked"/>
+        </StackLayout>
+        
+    </StackLayout>
+
+</ContentPage>
