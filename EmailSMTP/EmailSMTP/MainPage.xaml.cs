@@ -35,7 +35,7 @@ namespace EmailSMTP
                 SmtpServer.Host = "smtp.gmail.com";
                 SmtpServer.EnableSsl = true;
                 SmtpServer.UseDefaultCredentials = false;
-                SmtpServer.Credentials = new System.Net.NetworkCredential("irfanhidayatms@gmail.com", "Ind0nesi@");
+                SmtpServer.Credentials = new System.Net.NetworkCredential("your_email", "your_pass");
 
                 SmtpServer.Send(mail);
             }
